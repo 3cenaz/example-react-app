@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.active {
+  background-color: aquamarine;
+  color: darkcyan;
+}
