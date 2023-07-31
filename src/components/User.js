@@ -1,6 +1,6 @@
 import { useEffect,useState } from 'react'
 import {useParams, Link, useNavigate,Route,Routes} from 'react-router-dom'
-//import axios from 'axios'
+import axios from 'axios'
 
 function User(){
     const [loading, setLoading] = useState(true)
@@ -14,7 +14,7 @@ function User(){
         //     navigate("/users/")
         // },3000)
 
-        axios(`https://jsonplaceholder.typicode.com/users/${id}`)
+        axios(`${process.env.REACT_APP_API_ENDPOINT}/users/${id}`)
         .then((res) => setUser(res.data))
         .finally(setLoading(false))
     },[id])

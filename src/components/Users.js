@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {Link, Routes, Route, useMatch,Outlet,useLocation,NavLink} from 'react-router-dom'
-//import axios from "axios"
+import axios from "axios"
 import User from "./User"
 
 function Users(){
@@ -15,7 +15,7 @@ function Users(){
     //const {path, url} = useMatch() // /users
 
     useEffect(() => {
-        axios("https://jsonplaceholder.typicode.com/users")
+        axios(`${process.env.REACT_APP_API_ENDPOINT}/users`)
         .then((res) => setUsers(res.data))
         .finally(() => setLoading(false))
     },[])    
