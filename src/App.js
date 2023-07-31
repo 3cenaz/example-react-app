@@ -25,6 +25,11 @@ function App() {
             <li>
               <Link to = "/users">Users</Link>
             </li>
+            <li>
+              <a href = "/# ">
+                Learn React
+              </a>
+            </li>
           </ul>
         </nav> 
         {/* A <Switch> look through its children <Route>s and 

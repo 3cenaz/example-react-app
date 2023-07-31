@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {Link, Routes, Route, useMatch,Outlet,useLocation,NavLink} from 'react-router-dom'
-import axios from "axios"
+//import axios from "axios"
 import User from "./User"
 
 function Users(){

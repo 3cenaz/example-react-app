@@ -1,6 +1,6 @@
 import { useEffect,useState } from 'react'
 import {useParams, Link, useNavigate,Route,Routes} from 'react-router-dom'
-import axios from 'axios'
+//import axios from 'axios'
 
 function User(){
     const [loading, setLoading] = useState(true)
